@@ -1,0 +1,9 @@
+@startuml
+
+[*] -> Accepting
+Accepting --> Accepting : b,c
+Accepting --> NonAccepting : a
+NonAccepting --> NonAccepting : a
+NonAccepting --> Accepting : b,c
+
+@enduml
