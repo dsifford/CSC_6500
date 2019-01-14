@@ -2,13 +2,22 @@
 
 ## Problem 1 (25pts)
 
-1. Draw an automaton which will accept all integers as powers of 4, represented
-   in binary form (this problem was done in the class).
-1. Now write a code in a high-level language (C++, C\# or Java or ??) for the
-   automaton. Create an input file with the following integers, represented in
-   the binary form as separate lines:
+### Part 1.
 
-### Integers List
+Draw an automaton which will accept all integers as powers of 4, represented in
+binary form (this problem was done in the class).
+
+![dfa]
+
+\pagebreak
+
+### Part 2.
+
+Now write a code in a high-level language (C++, C\# or Java or ??) for the
+automaton. Create an input file with the following integers, represented in the
+binary form as separate lines:
+
+#### Integers List
 
 -   4<sup>3</sup>
 -   4<sup>6</sup>
@@ -17,7 +26,7 @@
 -   6<sup>2</sup>
 -   9<sup>2</sup>
 
-### File
+#### File
 
 ```
 1000000
@@ -30,6 +39,8 @@
 
 Use this input file to the code for your automata. Print your code and results.
 If more convenient, e-mail to your TA at `gd0393@wayne.edu`
+
+\pagebreak
 
 ## Problem 2 (75pts)
 
@@ -74,3 +85,5 @@ Operators are accepted in state `q2` and and in `q3` if it is an integer
 what strings are accepted (token) and list the names of new tokens.
 
 Email your results to the TA as in Problem 1.
+
+[dfa]: bin/dfa.png
