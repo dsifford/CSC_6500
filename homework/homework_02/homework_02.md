@@ -1,3 +1,5 @@
+Derek Siffod
+
 # Homework 2
 
 ## Problem 1 (25pts)
@@ -9,8 +11,6 @@ binary form (this problem was done in the class).
 
 ![dfa]
 
-\pagebreak
-
 ### Part 2.
 
 Now write a code in a high-level language (C++, C\# or Java or ??) for the
@@ -19,12 +19,12 @@ binary form as separate lines:
 
 #### Integers List
 
--   4<sup>3</sup>
--   4<sup>6</sup>
--   2<sup>3</sup>
--   5<sup>3</sup>
--   6<sup>2</sup>
--   9<sup>2</sup>
+-   4^3^
+-   4^6^
+-   2^3^
+-   5^3^
+-   6^2^
+-   9^2^
 
 #### File
 

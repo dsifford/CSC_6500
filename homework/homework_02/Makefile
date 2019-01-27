@@ -18,7 +18,7 @@ clean:
 main: $(targets)
 
 bin/%.pdf: %.md
-	pandoc --to latex --from markdown_github+raw_tex -o $@ $<
+	pandoc --to latex --from markdown_github+raw_tex+superscript -o $@ $<
 
 bin/%.png: %.uml
 	cat $< | docker run --rm -i think/plantuml -tpng > $@ 
