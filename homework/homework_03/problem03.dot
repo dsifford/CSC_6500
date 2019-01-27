@@ -1,0 +1,30 @@
+digraph NFA {
+    rankdir = LR;
+    size = "8,5!"
+
+    node [shape = point]; s;
+    node [shape = doublecircle] P6;
+    node [shape = doublecircle] Q6;
+    node [shape = circle];
+
+    s -> S;
+    S -> S [label = "0,1"];
+    
+    // left path
+    S  -> P1 [label = "0"  ];
+    P1 -> P2 [label = "1"  ];
+    P2 -> P3 [label = "1"  ];
+    P3 -> P3 [label = "0,1"];
+    P3 -> P4 [label = "0"  ];
+    P4 -> P5 [label = "1"  ];
+    P5 -> P6 [label = "0"  ];
+
+    // right path
+    S  -> Q1 [label = "1"  ];
+    Q1 -> Q2 [label = "0"  ];
+    Q2 -> Q3 [label = "0"  ];
+    Q3 -> Q3 [label = "0,1"];
+    Q3 -> Q4 [label = "1"  ];
+    Q4 -> Q5 [label = "0"  ];
+    Q5 -> Q6 [label = "1"  ];
+}

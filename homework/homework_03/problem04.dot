@@ -1,0 +1,27 @@
+digraph NFA {
+    rankdir = LR;
+    size = "8,5!"
+
+    node [shape = point]; s;
+    node [shape = doublecircle]; S;
+    node [shape = circle];
+
+    s -> S;
+
+    // track 1
+    S  -> Q1 [label = "a"];
+    Q1 -> S  [label = "a"];
+
+    // track 2
+    S  -> S  [label = "b"]
+
+    // track 3
+    S  -> Q2 [label = "a"];
+    Q2 -> Q3 [label = "b"];
+    Q3 -> S  [label = "a"];
+
+    // track 4
+    S  -> Q4 [label = "b"];
+    Q4 -> Q5 [label = "a"];
+    Q5 -> S  [label = "b"];
+}

@@ -1,0 +1,17 @@
+digraph DFA {
+    rankdir = LR;
+    size = "8,5!"
+
+    node [shape = point]; s;
+    node [shape = doublecircle]; Q4;
+    node [shape = circle];
+
+    s  -> Q1;
+    Q1 -> Q1 [label = "a"];
+    Q1 -> Q2 [label = "b"];
+    Q2 -> Q1 [label = "b"];
+    Q2 -> Q3 [label = "a"];
+    Q3 -> Q1 [label = "a"];
+    Q3 -> Q4 [label = "b"];
+    Q4 -> Q4 [label = "a,b"];
+}

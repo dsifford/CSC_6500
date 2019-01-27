@@ -3,7 +3,7 @@
 ## Problem 1 (25pts)
 
 Give the unrestricted grammar for the following language:
-{a*<sup>n</sup>*b*<sup>n</sup>*a*<sup>n</sup>*b*<sup>n</sup>* : _n_ ≥
+{a*<sup>n</sup>*b*<sup>n</sup>*a*<sup>n</sup>*b*<sup>n</sup>* : _n_ &ge;
 0}.
 
 > **Hint:** Generate a string %ABAB….\# ABAB .. (with n pairs of AB on each
@@ -16,13 +16,13 @@ Give the unrestricted grammar for the following language:
 Convert the NFA defined by the following transition table to the
 corresponding DFA
 
-| q   | a   | b   | λ     |
-| --- | --- | --- | ----- |
-| 1   | {1} | Ф   | {2,4} |
-| 2   | {3} | {5} | Ф     |
-| 3   | Ф   | {2} | Ф     |
-| 4   | {5} | {4} | Ф     |
-| 5   | Ф   | Ф   | Ф     |
+| q   | a     | b     | &lambda; |
+| --- | ----- | ----- | -------- |
+| 1   | {1}   | &Fcy; | {2,4}    |
+| 2   | {3}   | {5}   | &Fcy;    |
+| 3   | &Fcy; | {2}   | &Fcy;    |
+| 4   | {5}   | {4}   | &Fcy;    |
+| 5   | &Fcy; | &Fcy; | &Fcy;    |
 
 ## Problem 3 (20pts)
 
@@ -39,4 +39,6 @@ Give an NFA for the following expression: ((aaUb)\*(aba)\*bab)\*.
 Write a regular expression for the language recognized by the following
 FA.
 
-![](media/image1.emf)
+![problem_05]
+
+[problem_05]: ./bin/problem05.png

@@ -1,0 +1,38 @@
+digraph DFA {
+    rankdir = LR;
+    size = "8,5!"
+
+    node [shape = point]; s;
+    node [shape = circle];
+
+    A [label = "{1,2,4}"];
+    B [label = "{1,2,3,4,5}"];
+    C [label = "{4,5}"];
+    D [label = "{2,4,5}"];
+    E [label = "{5}"];
+    F [label = "{4}"];
+    G [label = "{3,5}"];
+    H [label = "{2}"];
+    I [label = "{3}"];
+    T [label = "Trap"];
+
+    s -> A;
+    A -> B [label = "a"];
+    A -> C [label = "b"];
+    B -> B [label = "a"];
+    B -> D [label = "b"];
+    C -> E [label = "a"];
+    C -> F [label = "b"];
+    D -> G [label = "a"];
+    D -> C [label = "b"];
+    E -> T [label = "a,b"];
+    F -> E [label = "a"];
+    F -> F [label = "b"];
+    G -> T [label = "a"];
+    G -> H [label = "b"];
+    H -> I [label = "a"];
+    H -> E [label = "b"];
+    I -> T [label = "a"];
+    I -> H [label = "b"];
+    T -> T [label = "a,b"];
+}
