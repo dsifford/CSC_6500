@@ -2,8 +2,8 @@
 
 ## Problem 1 (12pts)
 
-Consider the following TM (q1, is the starting state, e is
-blank; F is the accepting state; S means R/W stays)
+Consider the following TM (`q1`, is the starting state, `e` is
+blank; `F` is the accepting state; `S` means R/W stays)
 
     (q1,1)->(q1,1,R); (q1,0)->(q2,e,R);
     (q2,1)->(q2,1,R); (q2,0)->(q3,e,L); (q2,e)->(F,e,S)
@@ -12,18 +12,18 @@ blank; F is the accepting state; S means R/W stays)
 For each of these strings, show the final tape and say whether the TM
 accepts it or not.
 
-### `0011;` (3pts)
+### `0011` (3pts)
 
-### `101010;` (3pts)
+### `101010` (3pts)
 
-### `110;` (3pts)
+### `110` (3pts)
 
 ### `00100` (3pts)
 
 ## Problem 2 (18pts)
 
-Consider the following TM over the language {0,1} (q1, is the
-starting state, e is blank; F is the accepting state; S means R/W stays)
+Consider the following TM over the language {0,1} (`q1`, is the
+starting state, `e` is blank; `F` is the accepting state; `S` means R/W stays)
 
     (q1,1)->(q2,1,L); (q1,0)->(q3,$,R); (q1,e)->(F,e,S)
     (q2,$)->(q2,0,L); (q2,e)->(q1,e,R)
@@ -59,5 +59,5 @@ Give a TM that will accept the following regular expression (or language):
 
 ## Problem 6 (10pts)
 
-Define (give rules) a TM that accepts all binary strings of odd length
+Define (give rules for) a TM that accepts all binary strings of odd length
 with a `0` in the middle.
