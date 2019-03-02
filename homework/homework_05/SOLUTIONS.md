@@ -45,3 +45,18 @@ Not worth the effort.
 ### Part 3
 
 **Solution:** No solution
+
+## Problem 4
+
+**Note:** This portion is being turned in via email to the TA.
+
+### Test outputs
+
+|   Input | Output                                  |
+| ------: | --------------------------------------- |
+|     `8` | Final number is 4 after 1 iterations    |
+|    `19` | Final number is 16 after 16 iterations  |
+|    `28` | Final number is 16 after 14 iterations  |
+|    `47` | Final number is 16 after 100 iterations |
+|    `85` | Final number is 256 after 1 iterations  |
+| `23478` | Final number is 16 after 47 iterations  |
