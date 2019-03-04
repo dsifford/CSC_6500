@@ -42,6 +42,8 @@ table:
     done:
 ```
 
+\pagebreak
+
 ### Part 2
 
 Unary to binary TM Rules (starting state: `scan`):
@@ -83,6 +85,26 @@ table:
 ```
 
 ### Part 3
+
+**Note:** This portion is being turned in via email to the TA.
+
+#### Test Output
+
+**Binary to Unary**
+
+```
+Running for input 57 (binary 111001)
+        b2u = 111111111111111111111111111111111111111111111111111111111
+        u2b = 111001
+```
+
+**Unary to Binary**
+
+```
+Running for input 57 (unary 111111111111111111111111111111111111111111111111111111111)
+        u2b = 111001
+        b2u = 111111111111111111111111111111111111111111111111111111111
+```
 
 ## Problem 2
 
