@@ -4,7 +4,7 @@ Derek Sifford
 
 ## Problem 1
 
-> **Note:** code for this problem can be found here: https://github.com/dsifford/CSC_6500/tree/master/homework/homework_06
+> **Note:** code for this problem can be found here: https://github.com/dsifford/CSC_6500/tree/master/homework/homework_06/processor-communication
 
 The assignment with the lowest cost is simply placing every module in processor 2.
 
@@ -30,7 +30,54 @@ Monte carlo (10000 iterations):
 
 ## Problem 2
 
+> **Note:** code for this problem can be found here: https://github.com/dsifford/CSC_6500/tree/master/homework/homework_06/sort-integers
+
+I think the learning point here was supposed to have me conclude that using a randomly selected pivot point for quicksort is supposed to produce faster sorts. However, that's not what I found in my implementation (for a majority of the cases).
+
+### Here's a few runs for size 100,000
+
+```sh
+# Run 1
+Standard Quicksort (size 100000):
+  Duration: 393118724 nanoseconds
+Randomized Quicksort (size 100000):
+  Duration: 449062870 nanoseconds
+
+# Run 2
+Standard Quicksort (size 100000):
+  Duration: 390404690 nanoseconds
+Randomized Quicksort (size 100000):
+  Duration: 430821856 nanoseconds
+
+# Run 3
+Standard Quicksort (size 100000):
+  Duration: 396291651 nanoseconds
+Randomized Quicksort (size 100000):
+  Duration: 425620270 nanoseconds
+```
+
+### Here's a few runs for size 1,000,000
+
+```sh
+# Run 1
+Standard Quicksort (size 1000000):
+  Duration: 4411382638 nanoseconds
+Randomized Quicksort (size 1000000):
+  Duration: 4931852884 nanoseconds
+
+# Run 2
+Standard Quicksort (size 1000000):
+  Duration: 4424284348 nanoseconds
+Randomized Quicksort (size 1000000):
+  Duration: 4828422443 nanoseconds
+
+# Run 3
+Standard Quicksort (size 1000000):
+  Duration: 4642049809 nanoseconds
+Randomized Quicksort (size 1000000):
+  Duration: 4909243213 nanoseconds
+```
+
 ## Problem 3
 
 ## Problem 4
-

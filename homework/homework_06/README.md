@@ -65,28 +65,32 @@ cost. Note the following:
 
 Here is the outline of Quicksort but you can choose your own routine
 
-    Quicksort:
-        Input: a list L = (a_1,... a_n) of integers
+```
+Quicksort:
+    Input: a list L = (a_1,... a_n) of integers
 
-        If n <= 1
-            then return L
-        Else
-            Let i = 1          <------ 1: this line is different in below problem
+    If n <= 1
+        then return L
+    Else
+        Let i = 1          <------ 1: this line is different in below problem
 
-            Let L_1 be the subset of L whose elements are <= a_i
-            Let L_2 be the subset of L whose elements are == a_i
-            Let L_3 be the subset of L whose elements are >= a_i
+        Let L_1 be the subset of L whose elements are <= a_i
+        Let L_2 be the subset of L whose elements are == a_i
+        Let L_3 be the subset of L whose elements are >= a_i
 
-            recursively Quicksort L_1 and L_3
+        recursively Quicksort L_1 and L_3
 
-            return L as the concatenation of the list L_1, L_2, and L_3
+        return L as the concatenation of the list L_1, L_2, and L_3
 
-    end.
+end.
+```
 
 ### Randomized Quicksort
 
-    { (same as deterministic Quicksort, except line 1:}
-    1: choose a random integer i, 1 <= i <= n;
+```
+{ (same as deterministic Quicksort, except line 1:}
+1: choose a random integer i, 1 <= i <= n;
+```
 
 ## Problem 3 (15pts)
 
@@ -96,9 +100,11 @@ Solve the following SAT problems using backtracking method discussed in
 the class (here z' is the complement of z). Give your solution or show
 that it has no solution.
 
-    (a) (x OR y OR z') AND (x' OR y) AND (x' OR y' OR z')
+```
+(a) (x OR y OR z') AND (x' OR y) AND (x' OR y' OR z')
 
-    (b) (x OR y') AND (x' OR z) AND (y OR z') AND (x' OR y') AND (y OR z)
+(b) (x OR y') AND (x' OR z) AND (y OR z') AND (x' OR y') AND (y OR z)
+```
 
 ## Problem 4 (25pts)
 
