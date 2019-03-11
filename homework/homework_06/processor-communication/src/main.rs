@@ -1,30 +1,17 @@
-
 mod data;
-
-fn brute_force() -> (u32, Vec<usize>) {
-    let mut cost: u32 = 99999;
-    let mut combination: Vec<usize> = vec![];
-    for p1 in 0..4 {
-        for p2 in 0..4 {
-            for p3 in 0..4 {
-                for p4 in 0..4 {
-                    for p5 in 0..5 {
-                        let this_cost = data::processor_cost(p1, p2, p3, p4, p5) + data::communication_cost(p1, p2, p3, p4, p5);
-                        if this_cost < cost {
-                            cost = this_cost;
-                            combination = vec![p1, p2, p3, p4, p5];
-                        }
-                    }
-                }
-            }
-        }
-    } 
-    (cost, combination)
-}
+mod trial;
 
 fn main() {
-    let (cost, combination) = brute_force();
+    let (cost, combination) = trial::brute_force();
 
-    println!("Lowest cost = {}", cost);
-    println!("Best combination = {:?}", combination);
+    println!("Brute force:");
+    println!("  Lowest cost = {}", cost);
+    println!("  Best combination = {:?}", combination);
+
+    for i in ([10, 100, 1_000, 10_000] as [usize; 4]).iter() {
+        let (cost, combination) = trial::monte_carlo(*i);
+        println!("Monte carlo ({} iterations):", i);
+        println!("  Lowest cost = {}", cost);
+        println!("  Best combination = {:?}", combination);
+    }
 }
