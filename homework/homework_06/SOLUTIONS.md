@@ -10,7 +10,7 @@ The assignment with the lowest cost is simply placing every module in processor 
 
 ### Program Output
 
-```
+```sh
 Brute force:
   Lowest cost = 38
   Best combination = [2, 2, 2, 2, 2]
@@ -80,4 +80,34 @@ Randomized Quicksort (size 1000000):
 
 ## Problem 3
 
+### Part a)
+
+**Solution:** `x=1`, `y=1`, `z=0`.
+
+### Part b)
+
+**No Solution.**
+
 ## Problem 4
+
+> **Note:** code for this problem can be found here: https://github.com/dsifford/CSC_6500/tree/master/homework/homework_06/simulated-annealing
+
+### Output from 5 separate runs of the program
+
+```sh
+# Run 1
+Optimum value of x = 7
+
+# Run 2
+Optimum value of x = 9
+
+# Run 3
+Optimum value of x = 5
+
+# Run 4
+Optimum value of x = 2
+
+# Run 5
+Optimum value of x = 5
+```
+

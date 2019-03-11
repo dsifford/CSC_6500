@@ -106,19 +106,27 @@ that it has no solution.
 (b) (x OR y') AND (x' OR z) AND (y OR z') AND (x' OR y') AND (y OR z)
 ```
 
+(x or -y) and (-x or z) and (y or -z) and (-x or -y) and (y or z)
+
 ## Problem 4 (25pts)
 
 <!-- See here: https://en.wikipedia.org/wiki/Simulated_annealing -->
 
-Minimize the function `E(x) = x^2 – 15x + 54 = 0`, using
-_simulated annealing_ method. Take an initial random guess `x1`
-between 0 and 99. Set the value of Temperature `T = 100`. Calculate
-`E(x1)`. Choose another random guess `x2` (again between 0 and 99).
-Calculate `E(x2)`. Calculate the probability `P = exp(-[E(x2)-E(x1)]/T)`.
-If `p > 1`, accept `x2`, otherwise choose another random guess.
-Continue 5 iterations. Then reduce the temperature to `90` and repeat
-the procedure. Then reduce the temperature to `80, 70, ..., 10`.
-Determine the optimum value of x.
+Minimize the function `E(x) = x^2 – 15x + 54 = 0`, using a _simulated annealing_ method.
+
+### Steps
+
+1.  Take an initial random guess `x1` between 0 and 99.
+2.  Set the value of Temperature `T = 100`.
+3.  Calculate `E(x1)`.
+4.  Choose another random guess `x2` (again between 0 and 99).
+5.  Calculate `E(x2)`.
+6.  Calculate the probability `P = exp(-[E(x2)-E(x1)]/T)`.
+    -   If `p > 1`, accept `x2`, otherwise choose another random guess.
+7.  Continue 5 iterations.
+8.  Reduce the temperature to `90` and repeat the procedure.
+9.  Reduce the temperature to `80, 70, ..., 10`.
+10. Determine the optimum value of x.
 
 Submit the output (and the program as hard copy or softcopy) to the TA
 Tuan Minh Nguyen (tuan.minh.nguyen@wayne.edu)
