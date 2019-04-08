@@ -1,0 +1,3 @@
+anne     bob !charles
+charles  bob !anne
+anne    !bob !charles

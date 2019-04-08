@@ -1,4 +1,4 @@
-# Extra Credit Assignment
+# SAT Solver Extra Credit Assignment
 
 ## Instructions
 
